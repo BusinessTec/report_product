@@ -21,12 +21,12 @@
 ##############################################################################
 
 {
-    'name': 'Extra Invoice Layouts',
+    'name': 'Product Report',
     'version': '1.0',
     'sequence': 18,
     'summary': 'Additional reports to be printed for invoice view',
     'description': """
-Create additional printouts of invoices
+report_product
 =======================================
 Adds additonal layout of invoice and button under Print drop down option.
 This module requres manual corrections before installing in invoice_extra.xml and report in 
@@ -36,7 +36,6 @@ views folder to match final requirements (recommended use of branches to manage 
     'website': 'http://www.businesstec.net',
     'depends': ['sale', 'report'],
     'category': 'Sale',
-    'data': ['views/report_invoice_extra_org.xml',
-    'invoice_extra.xml'],
+    'data': ['product_report.xml'],
     'installable': True,
 }
